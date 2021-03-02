@@ -16,7 +16,7 @@ import java.time.Instant;
 public class AbstractEntity implements Serializable {
 
     @Id @GeneratedValue
-    private long id;
+    private Long id;
 
     @CreatedDate
     @Column(name = "creationDate",nullable = false)

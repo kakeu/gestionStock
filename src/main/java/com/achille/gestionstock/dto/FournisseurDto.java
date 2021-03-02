@@ -17,7 +17,6 @@ import java.util.List;
 public class FournisseurDto {
     private long id;
     private String nom;
-    private String prenom;
     private AdresseDto adresse;
     private String photo;
     private String mail;
@@ -32,7 +31,6 @@ public class FournisseurDto {
         return FournisseurDto.builder()
                 .id(fournisseur.getId())
                 .nom(fournisseur.getNom())
-                .prenom(fournisseur.getPrenom())
                 .photo(fournisseur.getPhoto())
                 .mail(fournisseur.getMail())
                 .numeroTelephone(fournisseur.getNumeroTelephone())
@@ -50,7 +48,6 @@ public class FournisseurDto {
         fournisseur.setId(fournisseurDto.getId());
         fournisseur.setMail(fournisseurDto.getMail());
         fournisseur.setNom(fournisseurDto.getNom());
-        fournisseur.setPrenom(fournisseurDto.getPrenom());
         fournisseur.setNumeroTelephone(fournisseurDto.getNumeroTelephone());
         fournisseur.setPhoto(fournisseurDto.getPhoto());
         fournisseur.setAdresse(AdresseDto.toEntity(fournisseurDto.getAdresse()));

@@ -22,6 +22,8 @@ public class Client extends AbstractEntity{
     private Adresse adresse;
    @Column(name = "photo")
     private String photo;
+    @Column(name = "identreprise")
+    private long idEntreprise;
    @Column(name = "mail")
     private String mail;
    @Column(name = "numerotelephone")
