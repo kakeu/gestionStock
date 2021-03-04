@@ -12,6 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 public class ErrorDto {
+
     private  Integer httpcode;
     private ErrorCodes code;
     private String message;
